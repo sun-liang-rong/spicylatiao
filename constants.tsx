@@ -8,7 +8,7 @@ export const PRODUCTS: Product[] = [
     spicyLevel: 5,
     description: '采用特级魔鬼椒，十八道工序手工锤炼，辣感层层递进，挑战极限。',
     color: '#991b1b',
-    image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=800',
+    image: '/mala.mp4',
     tagline: '辣出真味，手作不将就'
   },
   {

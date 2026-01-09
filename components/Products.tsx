@@ -63,8 +63,11 @@ export const Products: React.FC = () => {
   };
 
   const scrollToCard = (index: number) => {
-    if (!scrollRef.current) return;
+    setActiveIndex(index);
+    console.log(index)
+    // if (scrollRef.current) return;
     const target = scrollRef.current.children[index] as HTMLElement;
+    console.log(target, 'target')
     if (target) {
       scrollRef.current.scrollTo({
         left: target.offsetLeft - (scrollRef.current.offsetWidth / 2) + (target.offsetWidth / 2),
@@ -124,7 +127,8 @@ export const Products: React.FC = () => {
                   } rounded-2xl overflow-hidden border backdrop-blur-sm group/card`}
                 >
                   {/* Image */}
-                  <img 
+                  <video 
+                    loop
                     src={product.image} 
                     className={`absolute inset-0 w-full h-full object-cover transition-transform duration-[5s] ease-out ${isActive ? 'scale-110' : 'scale-100'}`} 
                     alt={product.name} 

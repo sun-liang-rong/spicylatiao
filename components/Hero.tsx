@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ scrollY = 0 }) => {
   };
 
   return (
-    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <div className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[url('/bg.png')] bg-cover bg-center">
       {/* Background with Parallax */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-black z-10" />
